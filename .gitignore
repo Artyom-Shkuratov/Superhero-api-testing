@@ -1,12 +1,16 @@
-
+# Виртуальное окружение
 .venv/
 
-.coverage
-htmlcov/
-
+# Кэш и временные файлы Python
 __pycache__/
 *.pyc
 
+# Файлы покрытия тестов
+.coverage
+htmlcov/
+
+# Кэш pytest
 .pytest_cache/
 
+# Системные файлы macOS
 .DS_Store
