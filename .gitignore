@@ -1,17 +1,45 @@
 # Виртуальное окружение
 .venv/
+env/
+ENV/
+venv/
 
-# Кэш и временные файлы Python
+# Кэш Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Файлы покрытия тестов
+# Кэш тестов
+.pytest_cache/
+
+# Кэш покрытия кода
 .coverage
 htmlcov/
 
-# Кэш pytest
-.pytest_cache/
+# Логи
+*.log
 
-# Системные файлы macOS
+# Базы данных
+*.sqlite3
+
+# Конфиденциальные файлы
+.env
+.env.*
+
+# Системные файлы
 .DS_Store
+Thumbs.db
 
+# Конфиги IDE (если работаешь в VS Code, PyCharm и т.д.)
+.vscode/
+.idea/
+
+# Docker (если будешь потом работать с контейнерами)
+docker-compose.override.yml
+
+# Миграции (если потом будет Django / Flask проект)
+migrations/
+
+# Кэш pip
+pip-wheel-metadata/
